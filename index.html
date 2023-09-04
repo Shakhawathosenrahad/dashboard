@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- google symbol -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/eab848cb9a.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" defer></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <!-- elements for nav icons  -->
+    <div class="absolute_elements" id="lang">
+        <a class="dropdown-item" href="#">
+            <img src="./img/lang.png" alt="">
+            <span>English</span>
+          </a>
+    </div>
+
+    <div class="absolute_elements" id="notification">
+        <div class="notificaiton_header">
+            <div>
+                <h4>Notification</h4>
+                <p>You have 0 unread messages</p>
+            </div>
+            <span class="material-symbols-outlined">done_all</span>
+        </div>
+        <div class="messa"></div>
+        <p>Clear All</p>
+    </div>
+
+    <div class="absolute_elements" id="user">
+        <div class="profile_header">
+                <h5><b>{username}</b></h5>
+                <p>testmailthiswillbeusermail</p>
+        </div>
+        <li>
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </li>
+        <li>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Purchases</span>
+        </li>
+        <li>
+            <i class="fa-solid fa-id-badge"></i>
+            <span>Profile</span>
+        </li>
+        <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <span>Account</span>
+        </li>
+        <button class="btn btn-outline-secondary mx-auto">Logout</button>
+    </div>
+
+
+
+
+    <nav>
+        <i class="fa-solid fa-bars"></i>
+
+        <div class="profile">
+            <div class="lang">
+                <img src="./img/lang.png" alt="">
+            </div>
+            <div class="notification">
+                <i tabindex="1" class="fa-solid fa-bell"></i>
+            </div>
+            <div class="user">
+                <i tabindex="1" class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="outside"></div>
+
+    <div class="side_nav">
+            <div class="logo form-switch">
+                <i class="fa-brands fa-slack"></i>
+                <input type="checkbox" class="form-check-input">
+            </div>
+            <br>
+            <div class="card">
+                <i class="fa-solid fa-user"></i>
+                <div class="details">
+                    <h5>Wecome, rahad</h5>
+                    <p>August 30, 2023</p>
+                </div>
+            </div>
+            <br>
+            <div class="general">
+                <p><b>GENERAL</b></p>
+                <a class="active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                <a>
+                    <i class="fa-solid fa-id-badge"></i>
+                    <span>Profile</span>
+                </a>
+                <a>
+                    <i class="fa-solid fa-vault"></i>
+                    <span>Payments</span>
+                </a>
+                <a>
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Wallets</span>
+                </a>
+                <a class="extends" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <div>
+                        <i class="fa-solid fa-cash-register"></i>
+                        <span>Commerce</span>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                          <li>Dashboard</li>
+                          <li>Transactions</li>
+                          <li>Payments</li>
+                          <li>Customers</li>
+                          <li>Account</li>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="marketplace">
+                <p><b>MARKETPLACE</b></p>
+                <a class="extends" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">
+                    <div>
+                        <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        <span>Exchange</span>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                          <li>Trade</li>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <a class="extends" data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">
+                    <div>
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>P2P</span>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample3">
+                        <div class="card card-body">
+                          <li>Buy Crypto</li>
+                          <li>Sell Crypto</li>
+                          <li>Create Offer</li>
+                          <li>My Trades</li>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <a class="extends" data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">
+                    <div>
+                        <i class="fa-solid fa-rocket"></i>
+                        <span>Staking</span>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample4">
+                      <div class="card card-body">
+                        <li>Plans</li>
+                        <li>Manage</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a>
+                    <i class="fa-solid fa-gift"></i>
+                    <span>Giftcards</span>
+                </a>
+            </div>
+    </div>
+    <div class="container">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+        <div class="chart_wrapper col-md-11 col-lg-5 col-md-8">
+                <div class="top_view">
+                    <div class="names">
+                        <h4>Current Price</h4>
+                        <h4>$12.265.815,60</h4>
+                        <div class="stock_up">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            <span>7.18%</span>
+                        </div>
+                    </div>
+                      <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-brands fa-bitcoin" style="color: #f7931a;"></i>
+                            <span>Bitcoin</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" value="1" href="#">
+                            <i class="fa-brands fa-bitcoin" style="color: #f7931a;"></i>
+                            <span>Bitcoin</span>
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            <i class="fa-brands fa-ethereum" style="color: #627eea;"></i>
+                            <span>Ethereum</span>
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-power-off" style="color: #008de4;"></i>
+                            <span>Dash</span>
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-bitcoin-sign" style="color: #0ac18e;"></i>
+                            <span>Bitcoin Cash</span>
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-litecoin-sign" style="color: #345d9d;"></i>
+                            <span>Litecoin</span>
+                          </a>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="chart">
+                    <div id="chart"></div>
+                </div>
+
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary active">H</button>
+                    <button type="button" class="btn btn-secondary">D</button>
+                    <button type="button" class="btn btn-secondary">W</button>
+                    <button type="button" class="btn btn-secondary">M</button>
+                    <button type="button" class="btn btn-secondary">Y</button>
+                  </div>
+        </div>
+        <div class="payment col-md-5  col-sm-12 col-lg-3 col-md-4">
+            <p><b>Payment</b></p>
+            <div class="ars">
+                <span>
+                    <p>ARS <br> 0</p>
+                </span>
+            </div>
+            <div class="available">
+                <div class="text">
+                    <div class="circle"></div>
+                    <p>Available</p>
+                </div>
+                <div class="money">
+                    <p class="m-0">$0,00</p>
+                </div>
+            </div>
+            <div class="available">
+                <div class="text">
+                    <div class="circle"></div>
+                    <p>Available</p>
+                </div>
+                <div class="money">
+                    <p class="m-0">$0,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="payment col-md-6 col-sm-12 col-lg-3">
+            <p><b>Wallet</b></p>
+            <div class="ars">
+                <span>
+                    <p>ARS <br> 0</p>
+                </span>
+            </div>
+            <div class="available">
+                <div class="text">
+                    <div class="circle wallet"></div>
+                    <p>Available</p>
+                </div>
+                <div class="money">
+                    <p class="m-0">$0,00</p>
+                </div>
+            </div>
+            <div class="available">
+                <div class="text">
+                    <div class="circle"></div>
+                    <p>Available</p>
+                </div>
+                <div class="money">
+                    <p class="m-0">$0,00</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+        
+        <div class="transaction col-md-11 col-lg-6">
+            <p><b>Recent Transaction</b></p>
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Coin</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <!-- <tbody>
+                  <tr>
+                    <td>1btc</td>
+                    <td>$20,000</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>1/2/21</td>
+                  </tr>
+                  <tr>
+                    <td>2eth</td>
+                    <td>$20,000</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>1/2/21</td>
+                  </tr>
+                  <tr>
+                    <td>1btc</td>
+                    <td>$20,000</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>1/2/21</td>
+                  </tr>
+                </tbody> -->
+              </table>
+              <p>No rows</p>
+              <div class="rows_per_page">
+                <p class="m-0">Rows Per Page: </p>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="1">10</option>
+                    <option value="2">25</option>
+                    <option value="3">50</option>
+                  </select>
+                <span>0-0 of 0</span>
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+        </div>
+        <div class="col-md-11 col-lg-5 limits">
+            <div class="limits_header">
+                <p><b>Account Limits</b></p>
+                <span>Unverified</span>
+            </div>
+            <li>
+                <div class="circle"></div>
+                <div class="details">
+                    <h5>Giftcard Purchase</h5>
+                    <p>$0/ $10 (per month)</p>
+                </div>
+            </li>
+            <li>
+                <div class="circle"></div>
+                <div class="details">
+                    <h5>Payment Deposits</h5>
+                    <p>$0/ $10 (per day)</p>
+                </div>
+            </li>
+            <li>
+                <div class="circle"></div>
+                <div class="details">
+                    <h5>Payment Withdrawals</h5>
+                    <p>$0/ $10 (per day)</p>
+                </div>
+            </li>
+            <li>
+                <div class="circle"></div>
+                <div class="details">
+                    <h5>Wallet Exchange</h5>
+                    <p>$0/ $10 (per day)</p>
+                </div>
+            </li>
+        </div>
+        </div>
+
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+        <div class="trades col-md-11 col-lg-5">
+            <p><b>Trades <span>Buy</span></b></p>
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Coin</th>
+                    <th scope="col">Payment</th>
+                    <th scope="col">Seller</th>
+                  </tr>
+                </thead>
+              </table>
+              <p>No rows</p>
+              <div class="rows_per_page">
+                <p class="m-0">Rows Per Page: </p>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="1">10</option>
+                    <option value="2">25</option>
+                    <option value="3">50</option>
+                  </select>
+                <span>0-0 of 0</span>
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+        </div>
+        <div class="trades col-md-11 col-lg-6">
+            <p><b>Trades <span class="sell">Sell</span></b></p>
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Coin</th>
+                    <th scope="col">Payment</th>
+                    <th scope="col">Seller</th>
+                  </tr>
+                </thead>
+              </table>
+              <p>No rows</p>
+              <div class="rows_per_page">
+                <p class="m-0">Rows Per Page: </p>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="1">10</option>
+                    <option value="2">25</option>
+                    <option value="3">50</option>
+                  </select>
+                <span>0-0 of 0</span>
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- chart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</body>
+</html>
